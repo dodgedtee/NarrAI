@@ -72,6 +72,12 @@ Start the server:
 uvicorn api.main:app --reload
 ```
 
+Or run with Docker Compose:
+```bash
+cp .env.example .env   # fill in your API keys
+docker compose up --build
+```
+
 Open `http://localhost:8000` in your browser. Upload chapter `.txt` files via drag-and-drop or the file picker, reorder them if needed, then click **Generate**. Agent progress streams in real time. Chapters can be exported as `.txt` or bundled into an `.epub`.
 
 **Keyboard shortcuts:** `←` / `→` navigate between chapters, `Esc` toggles the sidebar.
